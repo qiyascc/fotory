@@ -6,7 +6,7 @@ from .serializers import AlbumSerializer
 
 class HasAccessKey(BasePermission):
     def has_permission(self, request, view):
-        return request.headers.get('Access-Key') == 'qiyascc'
+        return request.headers.get('Access-Key') == 'ur_acces_key'
 
 class AlbumList(APIView):
     permission_classes = [HasAccessKey]
